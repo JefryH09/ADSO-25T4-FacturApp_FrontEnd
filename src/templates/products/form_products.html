@@ -5,44 +5,48 @@
 <h1>New Product</h1>
       <form>
         <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-          <div id="nameHelp" class="form-text">Write your full name.</div>
+          <label for="Product_name" class="form-label">Product Name</label>
+          <input type="text" class="form-control" id="Product_name" aria-describedby="Product_nameHelp">
+          <div id="Product_nameHelp" class="form-text">Write the product name.</div>
         </div>
         <div class="mb-3">
-          <label for="idType" class="form-label">Identification Number</label>
-          <select class="form-select" aria-label="idTypeHelp">
-            <option selected>Select your identification type</option>
-            <option value="CC">CC</option>
-            <option value="TI">TI</option>
-            <option value="CE">CE</option>
-            <option value="PA">PAS</option>
+          <label for="Description" class="form-label">Product Description</label>
+          <input type="text" class="form-control" id="name" aria-describedby="DescriptionHelp">
+          <div id="DescriptionHelp" class="form-text">Write the product Description.</div>
+        </div>
+        <div class="mb-3">
+          <label for="Category" class="form-label">Category</label>
+          <select class="form-select" aria-label="Category">
+            <option selected>Select the product category</option>
+            <option value="1">Electronics</option>
+            <option value="2">Home</option>
+            <option value="3">Office</option>
           </select>
-          <div id="idTypeHelp" class="form-text">Write your identification number.</div>
         </div>
         <div class="mb-3">
-          <label for="idNumber" class="form-label">Identification Number</label>
-          <input type="text" class="form-control" id="adress" aria-describedby="idNumberHelp" placeholder="11122333">
-          <div id="idNumberHelp" class="form-text">Write your identification number.</div>
+          <label for="Purchase_price" class="form-label">Purchase Price</label>
+          <input type="text" class="form-control" id="Purchase_price" aria-describedby="Purchase_priceHelp" placeholder="$" >
+          <div id="Purchase_priceHelp" class="form-text">Write Purchase Price.</div>
         </div>
         <div class="mb-3">
-          <label for="adress" class="form-label">Adress</label>
-          <input type="text" class="form-control" id="adress" aria-describedby="emailHelp" placeholder="Cra 20 # 55 -66">
-          <div id="adressHelp" class="form-text">Write your home adress.</div>
+          <label for="Sale_price" class="form-label">Sale Price</label>
+          <input type="text" class="form-control" id="Sale_price" aria-describedby="Sale_priceHelp" placeholder="$">
+          <div id="Sale_priceHelp" class="form-text">Write Sale Price.</div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="Stock" class="form-label">Stock</label>
+          <input type="Stock" class="form-control" id="Stock" aria-describedby="StockHelp">
+          <div id="StockHelp" class="form-text">Add Current Stock.</div>
         </div>
         <div class="mb-3">
-          <label for="phone" class="form-label">Phone</label>
-          <input type="text" class="form-control" id="phone">
+          <label for="Status" class="form-label">Status</label>
+          <select class="form-select" aria-label="Status">
+            <option selected>Select the Status.</option>
+            <option value="1">Active</option>
+            <option value="2">Inactive</option>
+          </select>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="recibirEmail">
-          <label class="form-check-label" for="exampleCheck1">Do you want be contacted by e-mail?</label>
-        </div>
+        
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 {% endblock %}
